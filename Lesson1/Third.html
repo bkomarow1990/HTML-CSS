@@ -7,48 +7,106 @@
     <meta charset="UTF-8">
     <title>SITE</title>
     <style>
-*{
-    margin: 12px;
-}
-h2{
-    font-size: 33px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#centred_h1{
-    text-align: center;
-}
-p{
-    font-size: 18px;
-}
-hr{
-    margin: 20px;
-}
-.p2{
-    font-size: 14px;
-}
-.align_right{
-    text-align: right;
-}
-.text::first-letter{
-    font-weight: bold;
-    font-size: 120%;
-}
-.formula{
-    background-color: red;
-}
+        * {
+            margin: 12px;
+        }
+
+        h2 {
+            font-size: 33px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 44px;
+        }
+
+        #centred_h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        .p2 {
+            font-size: 14px;
+        }
+
+        .italic_red {
+            font-style: italic;
+            font-weight: bold;
+            color: darkred;
+        }
+
+        .align_right {
+            text-align: right;
+        }
+
+
+        .formula {
+            text-align: center;
+            margin: 0 auto;
+
+        }
+
+        .formula p {
+            display: inline;
+            padding: 5px;
+            background-color: lightpink;
+        }
+        .formula sup{
+            margin: 0;
+        }
+        main span{
+            margin: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <h1 id="centred_h1">Mathematical formulas</h1>
-    <h2>
-            Linear Equations</h2>
-    <p>A linear equation is any equation that can be written in the form</p>
-    <p class="formula"></p>
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a mauris pharetra, vehicula metus eget, gravida sem. Duis hendrerit sed velit quis lobortis. Mauris lacinia libero at eleifend egestas. Cras venenatis sapien ut eleifend dictum. In enim nisi, sodales non tincidunt id, porttitor eget dui. Mauris non velit purus.</p>
-    <p class="text">
-            Nullam rutrum, ligula id pellentesque consequat, velit justo feugiat odio, ut elementum elit augue at mi. Aliquam lobortis augue dolor, id finibus sem elementum aliquam. Maecenas ac orci id magna dapibus venenatis. Nam urna nibh, mattis vitae aliquam quis, volutpat vitae nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed porta id nibh vitae porta. Vivamus justo mi, interdum eget dictum a, semper et nisi.</p>
-            <p class="text">Duis eget sagittis nibh. Duis ultricies convallis consectetur. Donec mollis dictum velit, et gravida sapien accumsan sed. Nam bibendum, turpis ut pretium interdum, ipsum neque consequat risus, vel hendrerit turpis arcu quis ante. Phasellus a ornare dolor, at tincidunt eros. Sed justo justo, ultricies et vestibulum id, consectetur sed quam. Donec eu viverra leo.</p>
+    <header>
+        <h1 id="centred_h1">Mathematical formulas</h1>
+    </header>
+    <main>
+        <h2>Linear Equations</h2>
+        <p>A linear equation is any equation that can be written in the form</p>
+        <div class="formula">
+            <p>ax + b = 0</p>
+        </div>
+        <p>where<span class="italic_red">a</span> and <span class="italic_red">b</span> are real numbers and <span
+                class="italic_red">x</span> is a variable. This form is sometimes called the standard form of a linear
+            equation. Note that most linear equations will not start off in this form. Also, the variable may or may not
+            be an <span class="italic_red">x</span> so don’t get too locked into always seeing an <span
+                class="italic_red">x</span> there.</p>
+                <h2>Quadratic Equation</h2>
+        <p>The standard form of a quadratic equation looks like this:</p>
+        <div class="formula">
+            <p>ax<sup>2</sup> + bx + c = 0</p>
+        </div>
+        <p>where <span class="italic_red">a</span>,<span class="italic_red">b</span>,<span class="italic_red">c</span>    are known values and <span class="italic_red">x</span> is the variable or unknown (we don't know it yet). Also, <span class="italic_red">a</span> can't be 0.</p>
+        <h2>The area of a circle (A)</h2>
+        <p> <span class="italic_red"></span> (Pi) times the radius (r) squared:</p>
+        <div class="formula">
+            <p>A = 𝜋 * r<sup>2</sup>  </p>
+        </div>
+        <p>or, when you know the diameter (<span class="italic_red">D</span>):</p>
+        <div class="formula">
+            <p>A = (𝜋 / 4) * D<sup>2</sup></p>
+        </div>
+        <p>or, when you know the circumference (<span class="italic_red">C</span>):</p>
+        <div class="formula">
+            <p>A = C<sup>2</sup> / 4 * 𝜋 </p>
+        </div>
+        <h2>Intersection</h2>
+        <p>The intersection of two sets <span class="italic_red">A</span> and <span class="italic_red">B</span>, denoted by A ⋂ B, is the set of all objects that are members of both the sets A and B. In symbols,</p>
+        <div class="formula">
+            <p>A ⋂ B = { x : x ∈ Z and x ∈ B}</p>
+        </div>
+        <p>That is,  <span class="italic_red">x</span> is an element of the intersection A [sign] B if and only if  <span class="italic_red">x</span> is both an element of  <span class="italic_red">A</span> and an element of  <span class="italic_red">B</span>.</p>
+    </main>
 </body>
 
 </html>
