@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        main>ol {
+            list-style-image: url(icons/arrow_16.png);
+        }
+
+        main {
+            list-style-type: none;
+        }
+
+        main #Winter>li {
+            list-style-image: url(icons/winter_16.png);
+        }
+
+        main #Autumn>li {
+            list-style-image: url(icons/autumn_16.png);
+        }
+
+        main #Summer>li {
+            list-style-image: url(icons/summer_16.png);
+        }
+
+        main #Spring>li {
+            list-style-image: url(icons/spring_16.png);
+        }
+
+        main>ol>li {
+            list-style-image: url(icons/arrow_16.png);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Seasons</h1>
+    </header>
+    <main>
+        <ol>
+            <li>Winter
+                <ol id="Winter">
+                    <li>December</li>
+                    <li>January</li>
+                    <li>Fabruary</li>
+                </ol>
+            </li>   
+            <li>Spring
+            <ol id="Spring">
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+            </ol></li>
+            <li> Summer
+            <ol id="Summer">
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+            </ol>
+        </li>
+            <li>Autumn
+            <ol id="Autumn">
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+            </ol>
+            </li>
+        </ol>
+    </main>
+</body>
+
+</html>
