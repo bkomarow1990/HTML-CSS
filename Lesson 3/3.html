@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Main</title>
-        <style>
-            #todo_list{
 
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>My To Do List</h1>
-        </header>
-       <main>
-          <ul id="todo_list">
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-          </ul>
-       </main>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        header h1 {
+            padding-left: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #todo_list {
+            list-style-position: inside;
+            list-style-image: url(materials_hw_module_2/icons/unchecked_16.png);
+        }
+
+        #todo_list>li {
+            padding: 15px 15px 15px 50px;
+            background-color: rgb(169, 204, 218);
+        }
+        
+        #todo_list>li:nth-child(even) {
+            background-color: rgb(177,216,230);
+        }
+
+        #todo_list>li>span {
+            margin: 0 10px;
+        }
+        ol>#checked {
+            text-decoration: line-through solid black;
+            list-style-image: url(materials_hw_module_2/icons/checked_16.png);
+            background-color: rgb(226, 226, 226)
+            !important;
+        }
+        li::after{
+            margin-left: 10px;
+            content: url(materials_hw_module_2/icons/close_16.png);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My To Do List</h1>
+    </header>
+    <main>
+        <ol id="todo_list">
+            <li><span>Hit the gym</span></li>
+            <li id="checked"><span>Pay bills</span></li>
+            <li><span>Meet John</span></li>
+            <li><span>Buy eggs</span></li>
+            <li id="checked"><span>Read a book</span></li>
+            <li><span>Organize office</span></li>
+            <li><span>Eat dinner</span></li>
+            <li><span>Buy apples</span></li>
+            <li><span>Meet George</span></li>
+            <li><span>Feed the cat</span></li>
+            <li id="checked"><span>Write a letter</span></li>
+            <li><span>Run 1 km</span></li>
+            </ul>
+    </main>
+</body>
+
 </html>
