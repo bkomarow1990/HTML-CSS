@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        main{
+            
+            
+        }
+        .gallery{
+            border: 1px solid black;
+            margin: 50px;
+            
+        }
+        main h2{
+            text-align: center;
+        }
+        #main_image{
+            width: 500px;
+            margin: auto;
+            display: block;
+        }
+        .lower_images{
+            text-align: center;
+            margin: 50px auto auto auto ;
+        }
+        .lower_images img{
+            border: 1px solid black;
+            width: 200px;
+            display: inline-block;
+        }
+        #arrow_left_icon{
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            background-color: rgb(1, 223, 12);
+            border-radius: 40px;
+            transform: scaleX(-1);
+        }
+        #arrow_right_icon{
+            position: absolute;
+            top: 40%;
+            left: 67%;
+            background-color: rgb(1, 223, 12);
+            border-radius: 40px;
+        }
+        #arrow_right_icon:hover{
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        #arrow_left_icon:hover{
+            box-shadow: 1px 1px 1px 1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+        
+        <div class="gallery">
+            <h2>CATS GALLERY</h2>
+            <img src="https://static.remove.bg/remove-bg-web/99ab439c6e8e26adfd8c59cee4eb26f0376a9584/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="Main Image" id="main_image">
+            <img src="icons/arrow.png" alt="" id="arrow_left_icon" onclick="prevImage()">
+            <img src="icons/arrow.png" alt="" id="arrow_right_icon" onclick="nextImage()">
+            <div class="lower_images">
+                <img src="https://static.remove.bg/remove-bg-web/99ab439c6e8e26adfd8c59cee4eb26f0376a9584/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="" id="lower_image1">
+                <img src="https://static.remove.bg/remove-bg-web/99ab439c6e8e26adfd8c59cee4eb26f0376a9584/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="" id="lower_image2">
+                <img src="https://static.remove.bg/remove-bg-web/99ab439c6e8e26adfd8c59cee4eb26f0376a9584/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="" id="lower_image3">
+                <img src="https://static.remove.bg/remove-bg-web/99ab439c6e8e26adfd8c59cee4eb26f0376a9584/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="" id="lower_image4">
+                <img src="https://static.remove.bg/remove-bg-web/99ab439c6e8e26adfd8c59cee4eb26f0376a9584/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="" id="lower_image5">
+                <img src="https://static.remove.bg/remove-bg-web/99ab439c6e8e26adfd8c59cee4eb26f0376a9584/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="" id="lower_image6">
+            </div>
+        </div>
+        <a target="_blank" href="https://icons8.com/icon/86086/arrow">Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </main>
+</body>
+<script src="3.js"></script>
+
+</html>
