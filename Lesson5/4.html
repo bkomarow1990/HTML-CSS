@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10px;
+            color:white;
+        }
+        header {
+            padding: 20px 0;
+            background-color: rgba(124, 16, 74, 0.938);
+        }
+        header h1{
+            margin-left: 80px;
+        }
+        header, menu {
+            margin-bottom: 10px;
+        }
+        menu{
+            padding: 1px 0;
+            background-color: rgb(92, 33, 66);
+        }
+        menu h1{
+            
+            margin-left: 80px;
+        }
+        #aside_3{
+            float:right;
+            width: 10%;
+        }
+        #aside_1, #aside_2 {
+            width: 20%;
+            
+            
+        }
+        #aside_1{
+            float: left;
+        }
+        /* #aside_2{
+            width: 20%;
+        } */
+        .asides_left, main, #aside_3{
+            /* clear: both; */
+            background-color: rgba(170, 29, 104, 0.938);
+        }
+        /* main::before, main::after{
+            content: "";
+            display: table;
+        }
+        main::after{
+            clear: both;
+        } */
+        .asides_left{
+            float:left;
+        }
+        main{
+            margin: 0 1%;
+            width: 80%;
+            float:left; 
+        }
+        .main{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HEADER</h1>
+    </header>
+    <menu>
+        <h1>MENU</h1>
+    </menu>
+    <div class="main">
+        <div class="asides_left">
+            <aside id="aside_1">
+                <h1>ASIDE 1</h1>
+            </aside>
+            <aside id="aside_2">
+                <h1>ASIDE 2</h1>
+            </aside>
+            
+        </div>
+        
+        <main>
+            <h1>MAIN CONTENT</h1>
+            <section>SECTION 1</section>
+            <section>SECTION 2</section>
+        </main>
+        
+        <aside id="aside_3">
+            <h1>ASIDE 3</h1>
+        </aside>
+        
+        
+    </div>
+</body>
+
+</html>
