@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        thead{
+            color:white;
+        }
+        table{
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        table th, td{
+            padding: 10px;
+        }
+        table thead th:first-child{
+            background-color: rgb(100, 118, 170);
+        }
+        table thead th:nth-child(2){
+            background-color: rgb(40, 80, 190);
+        }
+        table thead th:nth-child(3){
+            background-color: rgb(45, 40, 109);
+        }
+        table thead th:nth-child(4){
+            background-color: rgb(18, 16, 51);
+        }
+        table thead th:nth-child(5){
+            background-color: rgb(12, 10, 29);
+        }
+        table tbody tr:nth-child(odd) td:nth-child(odd){
+            background-color: rgb(196, 196, 196);
+        }
+        table tbody tr:nth-child(even) td:nth-child(even){
+            background-color: rgb(255, 255, 255);
+        }
+        table tbody tr:nth-child(odd) td:nth-child(even){
+            background-color: rgb(235, 235, 235);
+        }
+        table tbody tr:nth-child(even){
+            background-color: rgb(231, 231, 231);
+        }
+        table{
+            text-align: center;
+        }
+        table tr:last-child td div{
+            border: 1px solid black;
+            padding: 5px;
+            background-color: darkgray;
+        }
+        /* table tbody tr:first-child td:first-child{
+            text-align: left;
+        } */
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <thead>
+            <tr>
+                <th><span>Choose your plan</span></th>
+                <th>
+                    <p>
+                        starter
+                    </p>
+                    <h1>$10</h1>
+                    <p>per month</p>
+                </th>
+                <th>
+                    <p>
+                        econom
+                    </p>
+                    <h1>$30</h1>
+                    <p>per month</p>
+                </th>
+                <th>
+                    <p>
+                        standart
+                    </p>
+                    <h1>$59</h1>
+                    <p>per month</p>
+                </th>
+                <th>
+                    <p>
+                        professional
+                    </p>
+                    <h1>$99</h1>
+                    <p>per month</p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span>Amount of space</span></td>
+                <td><span>20GB</span></td>
+                <td>40GB</td>
+                <td>110GB</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td><span>Bandwith per month</span></td>
+                <td><span>120GB</span></td>
+                <td>240GB</td>
+                <td>610GB</td>
+                <td>1300GB</td>
+            </tr>
+            <tr>
+                <td>Email accounts</td>
+                <td>1</td>
+                <td>15</td>
+                <td>60</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>MySQL databases</td>
+                <td>1</td>
+                <td>15</td>
+                <td>60</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>25h support</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Support tickets per month</td>
+                <td>2</td>
+                <td>6</td>
+                <td>14</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div class="start_btn">START</div></td>
+                <td><div class="start_btn">START</div></td>
+                <td><div class="start_btn">START</div></td>
+                <td><div class="start_btn">START</div></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

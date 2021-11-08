@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .heart_image{
+           
+            filter: grayscale(100%);
+        }
+        .heart_image:hover{
+            animation: progress 1s forwards;
+        }
+        @keyframes progress{
+            0%{
+                transform: scale(1,1);
+                filter: grayscale(100%);
+            }
+            100%{
+                transform: scale(1.5,1.5);
+                filter: grayscale(0%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <img src="icons/favorites.png" alt="Heart" class="heart_image">
+    </main>
+</body>
+
+</html>
