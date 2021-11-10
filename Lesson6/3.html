@@ -6,35 +6,95 @@
     <title>Main</title>
     <style>
         * {
-            margin:0;
-            
+            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        header{
+
+        body {
+            background-color: rgb(218, 218, 218);
+        }
+
+        header {
             background-color: rgb(95, 22, 26);
         }
-        .menu{
-            color:white;
+
+        .menu {
+            box-sizing: border-box;
+            color: white;
             margin: auto;
             width: 90%;
             padding: 20px;
-            
+
+            position: sticky;
         }
-        .menu a{
+
+        .menu a {
             color: white;
             text-decoration: none;
         }
-        .menu ul li a:hover{
+
+        .menu ul li:hover {
             background-color: rgb(54, 9, 32);
         }
-        .menu h1{
-            margin-left: 20px;
-        }
-        .menu ul li{
+
+        .menu ul {
+
+            position: absolute;
+            margin: 0;
+            top: 0;
+            /* border: 1px solid black; */
+            height: 100%;
             display: inline-block;
         }
-        main{
+
+        .menu h1 {
+            display: inline-block;
+            /* margin-left: 20px; */
+        }
+
+        .menu ul li {
+            padding: 30px;
+
+            box-sizing: border-box;
+            /* height: auto; */
+            height: 100%;
+            display: inline-block;
+        }
+
+        .menu_lis {
+            display: inline-block;
+            height: 100%;
+        }
+
+        main h1 {
+            margin-bottom: 30px;
+        }
+
+        main {
+            padding: 20px;
+            width: 90%;
+            margin: auto;
             color: black;
+        }
+
+        .low_text {
+            font-size: 0.9em;
+        }
+
+        #first_text {
+            margin: 10px 0;
+        }
+        main .main_section{
+            float: left;
+            width: 65%;
+            margin-right: 25px;
+        }
+        main aside{
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(194, 194, 194);
+            float: right;
+            width: 25%;
         }
     </style>
 </head>
@@ -43,15 +103,59 @@
     <header>
         <div class="menu">
             <h1>WRITERS</h1>
+
             <ul>
                 <li><a href="#">Lorem</a></li>
                 <li><a href="#">Ipsum</a></li>
                 <li><a href="#">Sit</a></li>
+                <li><a href="#">Amet</a></li>
             </ul>
+
         </div>
     </header>
     <main>
-       <h1>William Shakespeare</h1>
+
+        <div class="main_section">
+            <h1>William Shakespeare</h1>
+            <hr>
+            <div class="main">
+                <p id="first_text"><span class="low_text">
+                        From wikipedia, the free encyclopedia
+                    </span></p>
+                <p>
+                    William Shakespeare (bapt. 26 April 1564 – 23 April 1616)[a] was an English playwright, poet, and
+                    actor,
+                    widely regarded as the greatest writer in the English language and the world's greatest
+                    dramatist.[2][3][4] He is often called England's national poet and the "Bard of Avon" (or simply
+                    "the
+                    Bard").[5][b] His extant works, including collaborations, consist of some 39 plays,[c] 154 sonnets,
+                    three long narrative poems, and a few other verses, some of uncertain authorship. His plays have
+                    been
+                    translated into every major living language and are performed more often than those of any other
+                    playwright.[7] They also continue to be studied and reinterpreted.
+                </p>
+                <p>
+                    Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married
+                    Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith. Sometime
+                    between 1585 and 1592, he began a successful career in London as an actor, writer, and part-owner of
+                    a playing company called the Lord Chamberlain's Men, later known as the King's Men. At age 49
+                    (around 1613), he appears to have retired to Stratford, where he died three years later. Few records
+                    of Shakespeare's private life survive; this has stimulated considerable speculation about such
+                    matters as his physical appearance, his sexuality, his religious beliefs, and whether the works
+                    attributed to him were written by others.[8][9][10]
+                </p>
+                <p>Shakespeare produced most of his known works between 1589 and 1613.[11][12][d] His early plays were primarily comedies and histories and are regarded as some of the best work produced in these genres. He then wrote mainly tragedies until 1608, among them Hamlet, Romeo and Juliet, Othello, King Lear, and Macbeth, all considered to be among the finest works in the English language.[2][3][4] In the last phase of his life, he wrote tragicomedies (also known as romances) and collaborated with other playwrights.</p>
+                <p>Many of Shakespeare's plays were published in editions of varying quality and accuracy in his lifetime. However, in 1623, two fellow actors and friends of Shakespeare's, John Heminges and Henry Condell, published a more definitive text known as the First Folio, a posthumous collected edition of Shakespeare's dramatic works that included all but two of his plays.[13] Its Preface was a prescient poem by Ben Jonson that hailed Shakespeare with the now famous epithet: "not of an age, but for all time".[13]</p>
+            </div>
+        </div>
+        <aside>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/220px-Shakespeare.jpg"
+                alt="">
+                
+                <!-- <div class="img_text">
+                    
+                </div> -->
+        </aside>
     </main>
 </body>
 
