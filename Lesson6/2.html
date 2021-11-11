@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: rgb(209, 209, 209);
+        }
+
+        header {
+            margin-top: 50px;
+        }
+
+        .nav_menu {
+            color: white;
+        }
+
+        .nav_menu * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav_menu ul,
+        .nav_menu ol {
+            list-style: none;
+        }
+
+        .nav_menu>ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav_menu>ul li {
+            position: relative;
+            border: 1px solid #14381a;
+        }
+
+        .nav_menu>ul li:first-child {
+            border-left: 1px solid #14381a;
+        }
+
+        .nav_menu>ul li:last-child {
+            border-right: 1px solid #14381a;
+        }
+
+        .nav_menu>ul li>a i.fa {
+            position: absolute;
+            top: 15px;
+            left: 12px;
+            font-size: 18px;
+        }
+
+        .nav_menu>ul li a {
+            color: white;
+            display: block;
+            background-color: rgb(71, 158, 71);
+            padding: 10px 50px;
+            text-decoration: none;
+        }
+
+        .nav_menu li a:hover {
+            background: rgb(37, 65, 24);
+        }
+
+        .nav_menu li ul {
+            position: absolute;
+            min-width: 150px;
+            display: none;
+        }
+
+        .nav_menu li>ul li {
+            border: 1px solid #14381a;
+        }
+
+        .nav_menu li>ul li a {
+            padding: 10px;
+            background: rgb(71, 158, 71);
+        }
+
+        .nav_menu li>ul li ul {
+            position: absolute;
+            right: -150px;
+            top: 0;
+        }
+
+        .nav_menu li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="nav_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a>
+                        <ul>
+                            <li><a href="#">Man</a></li>
+                            <li><a href="#">Woomen</a>
+                                <ul>
+                                    <li><a href="#">Dress</a></li>
+                                    <li><a href="#">Pants</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Kids</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a>
+                    </li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+    </main>
+</body>
+
+</html>

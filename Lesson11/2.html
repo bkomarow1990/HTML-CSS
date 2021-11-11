@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main</title>
+    <style>
+        body {
+            background-color: rgb(192, 192, 192);
+        }
+        /* .grid:nth-child(odd) .user{
+            background-color: red;
+        } */
+        .grid > div{
+            /* background-color: rgb(230, 230, 230); */
+        }
+        .grid > div > h3, p{
+            padding: 10px 10px 1px 20px;
+        }
+        .grid{
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+        .grid img {
+            padding-top: 10px;
+            float:right;
+            width: 30%;
+        }
+        .grid .user_1 h3{
+            display:inline-block;
+        }
+        .grid .user_2{
+            grid-column-start: 3;
+            grid-row-start: 2;
+        }
+        .grid .user_text_1{
+            width: 70%;
+            float:left;
+        }
+        .grid .message_2{
+            grid-column-start: 2;
+            border-radius: 20px 20px 20px 0;
+            padding: 20px;
+            background-color: rgb(87, 142, 206);
+        }
+        .grid .message_1{
+            border-radius: 20px 20px 20px 0;
+            padding: 20px 20px 20px 20px;
+            background-color: rgb(214, 103, 103);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="grid">
+            <div class="user_1">
+                <div class="user_text_1">
+                    <h3>Anie Smith</h3>
+                    <p>4 hours ago</p>
+                </div>
+                
+                <img src="images/avatar_2.png" alt="">
+                
+            </div>
+            <div class="message_1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi atque neque modi doloremque sed aut porro quos incidunt nemo laudantium ullam, consectetur alias corporis. Omnis amet ab fugiat excepturi?
+            </div>
+
+            <div class="user_2">
+                <div class="user_text_1">
+                    <h3>Anie Smith</h3>
+                    <p>4 hours ago</p>
+                </div>
+                
+                <img src="images/avatar_2.png" alt="">
+            <!-- </div> -->
+            </div>
+            <div class="message_2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi atque neque modi doloremque sed aut porro quos incidunt nemo laudantium ullam, consectetur alias corporis. Omnis amet ab fugiat excepturi?
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

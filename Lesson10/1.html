@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main</title>
+    <style>
+        body {
+            background-color: lightgrey;
+
+        }
+
+        main {
+            width: 96vw;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid grey;
+            display: flex;
+            flex-direction: row;
+        }
+
+        main .progress {
+            height: fit-content;
+            flex-direction: row;
+            margin: 0 10px;
+            padding: 8px;
+            flex-basis: 70%;
+            justify-content: space-between;
+            border: 1px solid darkgray;
+        }
+
+        img {
+            flex-basis: 20%;
+            height: 100%;
+        }
+
+        main .progress span,
+        p {
+            display: inline-block;
+        }
+
+        main .progress p {
+            text-align: left;
+        }
+
+        main .progress span {
+            text-align: right;
+        }
+
+        .done_btn {
+            align-self: flex-start;
+            flex-basis: 10%;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background-color: darkslateblue;
+        }
+
+        .main {
+            padding: 10px;
+        }
+
+        @media screen and (max-width:600px) {
+            main{
+                flex-direction: column !important;
+            }
+            main img{
+                width: 100% !important;
+            }
+            .progress{
+                margin-top: 10px !important;
+            }
+            .done_btn{
+                flex-basis: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <img src="images/loading.png" alt="" id="video_image">
+
+        <div class="center">
+            <div class="progress">
+                <span>UPLOADED 44% </span>
+                <p>About 23 minutes reamaning</p>
+            </div>
+            <div class="main">
+                <h2>Title of video</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas ad amet ullam maxime aut.
+                    Nesciunt soluta placeat veritatis odit maiores cumque eos deserunt recusandae dolore nam.
+                    Consequuntur, quae optio?</p>
+            </div>
+        </div>
+        <div class="done_btn">
+            DONE
+        </div>
+
+    </main>
+</body>
+
+</html>

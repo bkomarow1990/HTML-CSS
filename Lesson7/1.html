@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .progress_bar{
+            margin: auto;
+            width: 80%;
+            padding: 0;
+            height: 100px;
+            border: 3px solid orange;
+        }
+        .strip{
+            padding: 0;
+            position: relative;
+            width: 10%;
+            height: 100%;
+            animation: progress 2s infinite alternate;
+            background-color: orange;
+        }
+        .strip:hover{
+            
+        }
+        @keyframes progress{
+            0%{
+                left: 0%;
+            }
+            100%{
+                left: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="progress_bar">
+            <div class="strip">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
