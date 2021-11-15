@@ -1,107 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        *{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 15px auto;
+            flex-direction: column;
         }
-        .menu {
-            text-transform: uppercase;
-            color: white;
-            float:left;
-            margin: 0px;
-            width: 30%;
-            position:fixed;
-            left: -3%;
-            top: -3%;
-            bottom: 0;
+
+        .first-block {
+            height: auto;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        .menu li > img{
-            vertical-align: middle;
-            width: 100px;
-            height: 100px;
+
+        .second-block {
+            height: auto;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        .menu li{
-            padding: 10px;
-            background-color: grey;
-            list-style-type: none;
+
+        .third-block {
+            height: auto;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        .menu li > p {
-           
-            display: inline-block;
-            margin: 0;
+        .first-block hr{
+            background: rgb(207, 108, 207);
         }
-        .menu li:hover{
-            background-color: rgb(61, 61, 61);
+        .second-block hr{
+            background: orange;
+        }
+        .third-block hr{
+            background: rgb(150, 150, 223);
+        }
+        .fourth-block hr{
+            background: lightgreen;
+        }
+        .fourth-block {
+            height: auto;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .container hr{
+            width: 100%;
+            height: 2px;
+            border: none;
+        }
+        .price{
+            font-size: 32px;
+        }
+        .container{
+            padding-top: 100px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            text-align: center;
+        }
+        .container div{
+            padding: 20px;
+            /* padding: 20px; */
+            margin-right: 20px;
+            transition: all 1s;
+        }  
+        .container div:hover{
+            position: relative;
+            transform: scale(1.2);
+        }  
+        .button1{
+            background: rgb(207, 108, 207);
+        }
+        .button2{
+            background: orange;
+        }
+        .button3{
+            background: rgb(150, 150, 223);
+        }
+        .button4{
+            background: lightgreen;
+        }
+        .container a{
+            margin-top: 220px;
+            text-decoration: none;
+            color: white ;
+            border-radius: 5px;
+            padding: 10px 30px;
+        }
+        .grey{
+            color: lightgrey;
+            font-size: 1.2em;
+        }
+        .last_p{
+            margin-bottom: 50px;
         }
     </style>
 </head>
-
 <body>
-    <div class="menu">
-        <ul>
-            <li>
-                <img src="images/edit.png" alt="">
-                <p>Edit</p>
-            </li>
-            <li>
-                <img src="images/favorites.png" alt="">
-                <p>Favorites</p>
-            </li>
-            <li>
-                <img src="images/history.png" alt="">
-                <p>History</p>
-            </li>
-            <li>
-                <img src="images/security.png" alt="">
-                <p>Security</p>
-            </li>
-            <li>
-                <img src="images/settings.png" alt="">
-                <p>Settings</p>
-            </li>
-        </ul>
+    <div class="container">
+        <div class="first-block">
+            <h3>ENTERPRISE</h3>
+            <hr>
+            <p><span class="price">$69</span></p>
+            <p><span class="grey">per month</span></p>
+            <p>10GB disk space</p>
+            <p>100GB monthly bandwidth</p>
+            <p>20 email accounts</p>
+            <p class="last_p">Unlimited subdomens</p>
+            <a href="#" class="button1">
+                BUY
+            </a>
+        </div>
+        <div class="second-block">
+            <h3>ENTERPRISE</h3>
+            <hr>
+            <p><span class="price">$69</span></p>
+            <p><span class="grey">per month</span></p>
+            <p>10GB disk space</p>
+            <p>100GB monthly bandwidth</p>
+            <p>20 email accounts</p>
+            <p class="last_p">Unlimited subdomens</p>
+            <a href="#" class="button2">
+                BUY
+            </a>
+        </div>
+        <div class="third-block">
+            <h3>ENTERPRISE</h3>
+            <hr>
+            <p><span class="price">$69</span></p>
+            <p><span class="grey">per month</span></p>
+            <p>10GB disk space</p>
+            <p>100GB monthly bandwidth</p>
+            <p>20 email accounts</p>
+            <p class="last_p">Unlimited subdomens</p>
+            <a href="#" class="button3">
+                BUY
+            </a>
+        </div>
+        <div class="fourth-block">
+            <h3>ENTERPRISE</h3>
+            <hr>
+            <p><span class="price">$69</span></p>
+            <p><span class="grey">per month</span></p>
+            <p>10GB disk space</p>
+            <p>100GB monthly bandwidth</p>
+            <p>20 email accounts</p>
+            <p class="last_p">Unlimited subdomens</p>
+            <a href="#" class="button4">
+                BUY
+            </a>
+        </div>
     </div>
-    <main>
-        <h2>Lorem, ipsum dolor.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus minima deserunt autem necessitatibus fugit amet porro cum suscipit! Magni quo magnam mollitia veritatis voluptatum dolorum non, debitis sit amet.
-        Provident quia dicta pariatur vel excepturi eveniet molestiae minima qui voluptatum explicabo dolor laboriosam iste ea velit magnam ullam debitis, nam consequuntur praesentium iusto quam officia repellat? Eaque, impedit optio.
-        Iusto veniam cumque distinctio tempora deleniti, nesciunt, blanditiis ipsam pariatur eius veritatis nulla! Mollitia nam alias repudiandae voluptatum laboriosam earum, aliquam recusandae vel sint voluptate quos vero commodi laudantium non.
-        Nihil veritatis incidunt quasi neque quae tenetur dolore commodi distinctio provident temporibus veniam aliquam tempore hic, ipsum ab nemo nesciunt voluptatem enim explicabo perspiciatis. Earum deserunt cumque rem error consequatur!
-        Laudantium consequuntur doloremque, quos ipsum reprehenderit eaque. Distinctio eaque debitis natus dolore doloribus obcaecati reiciendis culpa totam, consectetur quos magnam beatae id? Atque dolorem provident fuga, et voluptate vel omnis.
-        Aspernatur dolore ab natus architecto vero magnam quibusdam, iusto dolorum officia inventore ipsam nostrum, facere exercitationem magni suscipit repellat nisi nam nesciunt perspiciatis et? Totam labore itaque reiciendis laborum optio.
-        Dignissimos blanditiis odit rerum in deserunt nobis sunt ipsa dicta fugit placeat? Iusto dolorem porro ea amet doloremque voluptatibus veniam vitae quod odit nemo id expedita facere in, inventore ad?
-        Dolorum optio ipsa vitae deserunt voluptatem, quo dicta voluptatibus dolor! Saepe illum, animi omnis eveniet quisquam non eos impedit earum possimus placeat molestiae atque suscipit aliquid, est minus vel delectus!
-        Nobis dolores quis quaerat repudiandae, dolorum dolor consectetur ad nisi dignissimos et beatae veritatis eos ex odit nulla tenetur porro eum officiis natus, a sint quod reiciendis suscipit cupiditate! Omnis!
-        Incidunt tenetur soluta dolorem, quia repellat sit impedit alias aut eaque aliquid nulla odit in non illo delectus repellendus, exercitationem ut! Tempora aliquam facere fuga explicabo quod sint magni corrupti!
-        Eius ratione culpa praesentium autem eum hic earum officiis pariatur ipsa, distinctio sapiente velit laborum suscipit inventore. Molestiae voluptatem velit aut explicabo cumque! Cumque iure et accusamus, quos odit quia.
-        At quisquam tempora laboriosam hic numquam accusamus totam in esse nam nemo, placeat ea, distinctio et dolore ab vero fuga ad veritatis earum eum. Id quia quod fuga laudantium nulla?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus minima deserunt autem necessitatibus fugit amet porro cum suscipit! Magni quo magnam mollitia veritatis voluptatum dolorum non, debitis sit amet.
-            Provident quia dicta pariatur vel excepturi eveniet molestiae minima qui voluptatum explicabo dolor laboriosam iste ea velit magnam ullam debitis, nam consequuntur praesentium iusto quam officia repellat? Eaque, impedit optio.
-            Iusto veniam cumque distinctio tempora deleniti, nesciunt, blanditiis ipsam pariatur eius veritatis nulla! Mollitia nam alias repudiandae voluptatum laboriosam earum, aliquam recusandae vel sint voluptate quos vero commodi laudantium non.
-            Nihil veritatis incidunt quasi neque quae tenetur dolore commodi distinctio provident temporibus veniam aliquam tempore hic, ipsum ab nemo nesciunt voluptatem enim explicabo perspiciatis. Earum deserunt cumque rem error consequatur!
-            Laudantium consequuntur doloremque, quos ipsum reprehenderit eaque. Distinctio eaque debitis natus dolore doloribus obcaecati reiciendis culpa totam, consectetur quos magnam beatae id? Atque dolorem provident fuga, et voluptate vel omnis.
-            Aspernatur dolore ab natus architecto vero magnam quibusdam, iusto dolorum officia inventore ipsam nostrum, facere exercitationem magni suscipit repellat nisi nam nesciunt perspiciatis et? Totam labore itaque reiciendis laborum optio.
-            Dignissimos blanditiis odit rerum in deserunt nobis sunt ipsa dicta fugit placeat? Iusto dolorem porro ea amet doloremque voluptatibus veniam vitae quod odit nemo id expedita facere in, inventore ad?
-            Dolorum optio ipsa vitae deserunt voluptatem, quo dicta voluptatibus dolor! Saepe illum, animi omnis eveniet quisquam non eos impedit earum possimus placeat molestiae atque suscipit aliquid, est minus vel delectus!
-            Nobis dolores quis quaerat repudiandae, dolorum dolor consectetur ad nisi dignissimos et beatae veritatis eos ex odit nulla tenetur porro eum officiis natus, a sint quod reiciendis suscipit cupiditate! Omnis!
-            Incidunt tenetur soluta dolorem, quia repellat sit impedit alias aut eaque aliquid nulla odit in non illo delectus repellendus, exercitationem ut! Tempora aliquam facere fuga explicabo quod sint magni corrupti!
-            Eius ratione culpa praesentium autem eum hic earum officiis pariatur ipsa, distinctio sapiente velit laborum suscipit inventore. Molestiae voluptatem velit aut explicabo cumque! Cumque iure et accusamus, quos odit quia.
-            At quisquam tempora laboriosam hic numquam accusamus totam in esse nam nemo, placeat ea, distinctio et dolore ab vero fuga ad veritatis earum eum. Id quia quod fuga laudantium nulla?</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus minima deserunt autem necessitatibus fugit amet porro cum suscipit! Magni quo magnam mollitia veritatis voluptatum dolorum non, debitis sit amet.
-                Provident quia dicta pariatur vel excepturi eveniet molestiae minima qui voluptatum explicabo dolor laboriosam iste ea velit magnam ullam debitis, nam consequuntur praesentium iusto quam officia repellat? Eaque, impedit optio.
-                Iusto veniam cumque distinctio tempora deleniti, nesciunt, blanditiis ipsam pariatur eius veritatis nulla! Mollitia nam alias repudiandae voluptatum laboriosam earum, aliquam recusandae vel sint voluptate quos vero commodi laudantium non.
-                Nihil veritatis incidunt quasi neque quae tenetur dolore commodi distinctio provident temporibus veniam aliquam tempore hic, ipsum ab nemo nesciunt voluptatem enim explicabo perspiciatis. Earum deserunt cumque rem error consequatur!
-                Laudantium consequuntur doloremque, quos ipsum reprehenderit eaque. Distinctio eaque debitis natus dolore doloribus obcaecati reiciendis culpa totam, consectetur quos magnam beatae id? Atque dolorem provident fuga, et voluptate vel omnis.
-                Aspernatur dolore ab natus architecto vero magnam quibusdam, iusto dolorum officia inventore ipsam nostrum, facere exercitationem magni suscipit repellat nisi nam nesciunt perspiciatis et? Totam labore itaque reiciendis laborum optio.
-                Dignissimos blanditiis odit rerum in deserunt nobis sunt ipsa dicta fugit placeat? Iusto dolorem porro ea amet doloremque voluptatibus veniam vitae quod odit nemo id expedita facere in, inventore ad?
-                Dolorum optio ipsa vitae deserunt voluptatem, quo dicta voluptatibus dolor! Saepe illum, animi omnis eveniet quisquam non eos impedit earum possimus placeat molestiae atque suscipit aliquid, est minus vel delectus!
-                Nobis dolores quis quaerat repudiandae, dolorum dolor consectetur ad nisi dignissimos et beatae veritatis eos ex odit nulla tenetur porro eum officiis natus, a sint quod reiciendis suscipit cupiditate! Omnis!
-                Incidunt tenetur soluta dolorem, quia repellat sit impedit alias aut eaque aliquid nulla odit in non illo delectus repellendus, exercitationem ut! Tempora aliquam facere fuga explicabo quod sint magni corrupti!
-                Eius ratione culpa praesentium autem eum hic earum officiis pariatur ipsa, distinctio sapiente velit laborum suscipit inventore. Molestiae voluptatem velit aut explicabo cumque! Cumque iure et accusamus, quos odit quia.
-                At quisquam tempora laboriosam hic numquam accusamus totam in esse nam nemo, placeat ea, distinctio et dolore ab vero fuga ad veritatis earum eum. Id quia quod fuga laudantium nulla?</p>
-    </main>
 </body>
-
 </html>

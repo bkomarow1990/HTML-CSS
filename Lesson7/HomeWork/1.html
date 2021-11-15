@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .circle{
+            position: relative;
+            border-radius: 100%;
+            border: 5px solid rgb(51, 134, 106);
+            width: 500px;
+            margin: 50px auto ;
+            height: 500px;
+        }
+        .minute_arrow{
+            text-align: center;
+            width: 5px;
+            /* margin: auto; */
+            font-size: inherit;
+            position: absolute;
+            display: block;
+            left: 50%;
+            top: 0%;
+            /* margin-top: 20px; */
+            height: 250px;
+            /* animation: minute_arrow 2s ease-in 1s infinite reverse both; */
+            animation: arrow 10s infinite;
+            transform-origin: 0 100%;
+            background-color: rgb(51, 134, 106);
+        }
+        .hour_arrow{
+            text-align: center;
+            width: 5px;
+            /* margin: auto; */
+            font-size: inherit;
+            position: absolute;
+            display: block;
+            left: 50%;
+            top: 50px;
+            /* margin-top: 20px; */
+            height: 200px;
+            /* animation: minute_arrow 2s ease-in 1s infinite reverse both; */
+            animation: arrow 30s 2s infinite;
+            transform-origin: 0 100%;
+            background-color: rgb(51, 134, 106);
+        }
+        .center_circle{
+            background-color: rgb(51, 134, 106);
+            margin: auto;
+            width: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 45%;
+            left: 47%;
+            height: 30px;
+        }
+        @keyframes arrow{
+            /* 0%{
+                transform: rotate(0deg);
+            } */
+            100%{
+                
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="circle">
+            <div class="center_circle">
+
+            </div>
+            <div class="minute_arrow">
+
+            </div>
+
+            <div class="hour_arrow">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
