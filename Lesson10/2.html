@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 2%;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .info {
+            flex-basis: 80%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-basis: 20%;
+            padding: 0;
+        }
+
+        .container ul {
+            list-style: none;
+        }
+
+        .container ul li {
+            background-color: #7289da;
+            padding: 5%;
+        }
+
+        .container ul li:first-child {
+            background-color: rgba(25, 38, 95, 0.904);
+            border-radius: 15px 15px 0 0;
+        }
+
+        .container ul li:last-child {
+            border-radius: 0 0 15px 15px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .main {
+                flex-direction: column;
+            }
+            .container {
+                flex-direction: row;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="info">
+            <h1>Introduction</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum facere assumenda libero similique nobis
+                iste
+                perspiciatis, expedita quaerat tempora aliquid a quisquam impedit accusamus quis sapiente qui doloremque et
+                corporis corrupti delectus! Eaque nobis esse obcaecati commodi eius error excepturi? Quo corrupti quibusdam
+                nobis eos fugiat eligendi sint deleniti. Quos! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto
+                ab consequatur dolores corporis atque in eos praesentium laboriosam non quis soluta consectetur repellat
+                cumque
+                exercitationem vitae ratione, quas eum est! Itaque, voluptas maxime? Culpa officia eaque atque officiis est
+                impedit dicta mollitia quo, numquam, odit, iste nisi laborum natus! Veniam.</p>
+            <h1>Additional Information</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum facere assumenda libero similique nobis
+                iste
+                perspiciatis, expedita quaerat tempora aliquid a quisquam impedit accusamus quis sapiente qui doloremque et
+                corporis corrupti delectus! Eaque nobis esse obcaecati commodi eius error excepturi? Quo corrupti quibusdam
+                nobis eos fugiat eligendi sint deleniti. Quos! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Iusto
+                ab consequatur dolores corporis atque in eos praesentium laboriosam non quis soluta consectetur repellat
+                cumque
+                exercitationem vitae ratione, quas eum est! Itaque, voluptas maxime? Culpa officia eaque atque officiis est
+                impedit dicta mollitia quo, numquam, odit, iste nisi laborum natus! Veniam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate harum impedit sequi placeat
+                necessitatibus
+                corporis inventore consequatur rerum temporibus quaerat.
+            </p>
+        </div>
+    <div class="container">
+        <div class="first-column">
+            <ul>
+                <li>Actions</li>
+                <li>Lorem ipsum dolor sit amet lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit amet lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit amet lorem, ipsum.</li>
+            </ul>
+        </div>
+        <div class="second-column">
+            <ul>
+                <li>Plans</li>
+                <li>Lorem ipsum dolor sit amet lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit amet lorem, ipsum.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main{
+            display: flex;
+        }
+        body{
+            background-color: rgb(191, 191, 191);
+        }
+        header{
+            /* padding: 20px; */
+            /* display: flex; */
+            height: 100vw;
+            flex-basis: 25%;
+            /* position: fixed; */
+            background-color: rgb(35, 35, 35);
+            border-bottom: 1px solid black;
+            background-size: cover;
+        }
+        .menu ul{
+            color: white; 
+            text-transform: uppercase;
+            list-style: none;
+            padding: 0;
+
+        }
+        .menu ul > li:first-child{
+            border-top: 1px solid black;
+        }
+        .menu li{
+            padding: 20px;
+            border-bottom: 1px solid black;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+        }
+        .menu img{
+            align-self: center;
+            
+            margin: 25px 0 ;
+        }
+        main{
+            padding: 30px;
+            flex-basis: 80%;
+            background-color: rgb(191, 191, 191);
+        }
+        .graphics{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .graphics > div{
+            display: flex;
+            
+            flex-direction: column;
+            padding: 50px 80px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: rgb(238, 238, 238);
+        }
+        .recent_activity{
+            margin-top: 20px;
+            padding: 30px;
+            background-color: rgb(238, 238, 238);
+        }
+        .recent_activity h2{
+            font-weight: bold;
+        }
+        .h2{
+            margin-bottom: 20px;
+        }
+        .grid{
+            padding: 20px;
+            display: grid;
+            grid-row-gap: 20px;
+            grid-template-columns: 0.5fr 5fr 2fr 2fr;
+        }
+       .grid > div{
+           border-bottom: 1px solid rgba(181, 181, 181, 0.612);
+       }
+       .last_div{
+           font-weight: bold;
+       }
+       @media only screen and (max-width: 600px) { 
+           .header{
+               flex-basis: 100vw;
+           }
+           .main{
+               flex-direction: column;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <header>
+        <div class="menu">
+        <img src="images/logo.png" alt="" width="100px" height="100px">
+            <ul>
+                <li>Dashboard</li>
+                <li>Users</li>
+                <li>File Manager</li>
+                <li>Posts</li>
+                <li>Events</li>
+
+                
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2 class="h2">Dashboard - May 25,2019</h2>
+        <div class="graphics">
+            <div class="graphic1">
+                <span>TRAFFIC</span>
+                <img src="images/chart1.png" alt="">
+            </div>
+            <div class="graphic2">
+                <span>LOADS</span>
+                <img src="images/chart2.png" alt="">
+            </div>
+        </div>
+        <div class="recent_activity">
+            <h2> RECENT ACTIVITY </h2>
+            <div class="grid">
+                
+                <div class="last_div"><span class="bold">#</span></div>
+                <div class="last_div"><span class="bold">Title</span></div>
+                <div class="last_div"><span class="bold">Author</span></div>
+                <div class="last_div"><span class="bold">Date</span></div>
+
+                <div><span class="bold">1</span></div>
+                <div><span class="bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nihil.</span></div>
+                <div><span class="bold">Johnson Ramboo</span></div>
+                <div><span class="bold">22.01.2228</span></div>
+
+                <div><span class="bold">2</span></div>
+                <div><span class="bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nihil.</span></div>
+                <div><span class="bold">Johnson Ramboo</span></div>
+                <div><span class="bold">22.01.2228</span></div>
+
+                <div><span class="bold">3</span></div>
+                <div><span class="bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nihil.</span></div>
+                <div><span class="bold">Johnson Ramboo</span></div>
+                <div><span class="bold">22.01.2228</span></div>
+
+                <div><span class="bold">4</span></div>
+                <div><span class="bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, nihil.</span></div>
+                <div><span class="bold">Johnson Ramboo</span></div>
+                <div><span class="bold">22.01.2228</span></div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
