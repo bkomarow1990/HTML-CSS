@@ -8,22 +8,26 @@
     <style>
         body {
             background-color: rgb(124, 176, 211);
-
         }
         .grid > div{
+            flex-wrap: 1;
             background-color: rgb(230, 230, 230);
         }
         .grid > div > h3, p{
             padding: 10px 10px 1px 20px;
         }
         .grid{
-            grid-row-gap: 20px;
             grid-column-gap: 20px;
+            grid-row-gap: 0px;
             padding: 50px;
             display: grid;
-            align-items: center;
+            align-items:center;
+            /* align-items:flex-start;
+            grid-row-gap: 20px; */
             grid-template-columns: 1fr 1fr 1fr;
-            justify-items:space-between;
+            grid-template-rows: 1fr 1fr 1fr;
+            /* justify-items:space-between; */
+            
         }
         .grid  img {
             width: 100%;
