@@ -10,7 +10,7 @@
         }
         
         .heart_image{
-           
+            animation: progress_back 1s forwards;
             filter: grayscale(100%);
         }
         .heart_image:hover{
@@ -22,6 +22,12 @@
                 filter: grayscale(100%);
             }
             100%{
+                transform: scale(1.5,1.5);
+                filter: grayscale(0%);
+            }
+        }
+        @keyframes progress_back{
+            0%{
                 transform: scale(1.5,1.5);
                 filter: grayscale(0%);
             }
